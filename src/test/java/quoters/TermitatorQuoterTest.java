@@ -8,11 +8,12 @@ import static org.junit.Assert.*;
 public class TermitatorQuoterTest {
 
     @Test
-    public void sayQuote(){
+    public void sayQuote() throws InterruptedException {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("context.xml");
-        context.getBean(TermitatorQuoter.class).sayQuote();
-
-
+        while (true) {
+            Thread.sleep(100);
+            context.getBean(Quoter.class).sayQuote();
+        }
     }
 
 }

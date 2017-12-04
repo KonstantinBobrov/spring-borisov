@@ -6,6 +6,7 @@ import lombok.Value;
 import javax.annotation.PostConstruct;
 
 @Profiling
+@DeprecatedClass(newImpl = T000.class)
 public class TermitatorQuoter implements Quoter {
     @InjectRandomInt(min = 2 , max = 7)
     private int repeat;

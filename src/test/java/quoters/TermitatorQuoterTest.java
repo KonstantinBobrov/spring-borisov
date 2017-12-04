@@ -15,7 +15,7 @@ public class TermitatorQuoterTest {
         //    context.getBean(Quoter.class).sayQuote();
         //}
 
-       // context.getBean(Quoter.class).sayQuote();
+        context.getBean(Quoter.class).sayQuote();
     }
 
 }
